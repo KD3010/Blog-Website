@@ -1,8 +1,13 @@
 <%- include("partials/header") -%>
     <h1>Compose</h1>
-    <form action="#" method="POST">
-        <input type="text" name="add" id="">
-        <button type="submit" name="publish">publish</button>
+    <form action="/compose" method="POST">
+        <label for="postTitle" style="font-size: 1.7rem;">Title</label>
+        <input type="text" name="publishTitle" id="postTitle" autocomplete="off" style="width: 100%; padding: 0.5rem;">
+
+        <label for="postContent" style="margin-top: 2rem; font-size: 1.7rem;">Post</label>
+        <textarea type="text" name="publishContent" id="postContent" autocomplete="off" rows="10" style="width: 100%; padding: 0.5rem;"></textarea>
+        
+        <button type="submit" name="publish" style="margin-top: 1rem; background-color: #1abc9c; border-radius: 5px; border: none; color: white; padding: 1rem 2rem;">Publish</button>
     </form>
 
 <%- include("partials/footer") -%>
